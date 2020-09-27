@@ -18,4 +18,6 @@ public interface UserDao {
     int updateUser(User user);
     // 删除
     int delUser(int id);
+    //分页
+    List<User> getUsersByLimit(Map<String, Integer> map);
 }

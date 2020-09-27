@@ -11,8 +11,7 @@
     <!--  settings  -->
     <settings>
         <!--   标准日志工场     -->
-        <!--   <setting name="logImpl" value="STDOUT_LOGGING" />  -->
-        <setting name="logImpl" value="LOG4J"></setting>
+        <setting name="logImpl" value="STDOUT_LOGGING" />
     </settings>
 
     <!--  aliase   -->
@@ -32,6 +31,7 @@
             </dataSource>
         </environment>
     </environments>
+
     <mappers>
         <mapper resource="mapper/UserMapper.xml"/>
     </mappers>
