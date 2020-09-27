@@ -7,10 +7,18 @@
     <!-- properties   -->
     <properties resource="db.properties">
     </properties>
+
+    <!--  settings  -->
+    <settings>
+        <!--   标准日志工场     -->
+<!--        <setting name="logImpl" value="STDOUT_LOGGING" />-->
+        <setting name="logImpl" value="LOG4J"></setting>
+    </settings>
+
     <!--  aliase   -->
     <typeAliases>
         <typeAlias alias="User" type="com.lx.pojo.User"/>
-<!--        <package name="com.lx.pojo"/>-->
+        <!-- <package name="com.lx.pojo"/> -->
     </typeAliases>
     <!--  environments  -->
     <environments default="development">
