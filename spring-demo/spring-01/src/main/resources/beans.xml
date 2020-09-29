@@ -16,8 +16,8 @@
     </bean>
 <!--  name别名  -->
     <bean id="user" class="com.lx.pojo.User" name="u1 u2, u3; u4">
-<!--        <property name="name" value="刘协"></property>-->
-        <constructor-arg index="0" value="liuxue"></constructor-arg>
+        <property name="name" value="刘协"></property>
+<!--        <constructor-arg index="0" value="liuxue"></constructor-arg>-->
     </bean>
 
 </beans>

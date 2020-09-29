@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="com.lx.pojo.Student">
+        <!--   01.普通注入     -->
+        <property name="name" value="哈哈哈"></property>
+        <!--    02.bean注入  ref  -->
+        <property name="address" ref="address"></property>
+        <!--    03.数组注入    -->
+        <property name="books">
+            <array>
+                <value>红楼梦</value>
+                <value>西游记</value>
+                <value>三国演义</value>
+                <value>水浒传</value>
+            </array>
+        </property>
+        <!--      04.List      -->
+        <property name="hobbys">
+            <list>
+                <value>听歌</value>
+                <value>看电影</value>
+                <value>下棋</value>
+                <value>打篮球</value>
+            </list>
+        </property>
+        <!--   05.map     -->
+        <property name="card">
+            <map>
+                <entry key="身份证" value="2313321313"></entry>
+                <entry key="银行卡" value="12312312321333"></entry>
+            </map>
+        </property>
+        <!--    06.set    -->
+        <property name="games">
+            <set>
+                <value>LOL</value>
+                <value>COC</value>
+                <value>BOB</value>
+            </set>
+        </property>
+        <!--   07.null     -->
+        <property name="wife">
+            <null></null>
+        </property>
+        <!--    08.property     -->
+        <property name="info">
+            <props>
+                <prop key="driver">19321321</prop>
+                <prop key="name">lixie</prop>
+                <prop key="age">19</prop>
+            </props>
+        </property>
+    </bean>
+
+
+
+
+    <bean id="address" class="com.lx.pojo.Address">
+        <property name="address" value="上海市浦东新区"></property>
+    </bean>
+</beans>

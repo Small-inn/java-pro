@@ -1,0 +1,25 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean id="cat" class="com.lx.pojo.Cat"></bean>
+    <bean id="dog" class="com.lx.pojo.Dog"></bean>
+
+<!--
+  autowire:
+  byName:会自动在容器上下文中查找，和自己对象set方法后面的值对应的beanid
+  byType:会自动在容器上下文中查找，和自己对象属性类型相同的bean,需要类型唯一
+
+  -->
+    <bean id="person" class="com.lx.pojo.Person" autowire="byName">
+        <property name="name" value="嘻嘻嘻嘻"></property>
+<!--        <property name="dog" ref="dog" />-->
+<!--        <property name="cat" ref="cat" />-->
+
+    </bean>
+
+</beans>

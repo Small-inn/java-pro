@@ -10,6 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>spring-01</module>
+        <module>spring-02-di</module>
+        <module>spring-03-Autowired</module>
+        <module>spring-04-Annotation</module>
+        <module>spring-05-Appconfig</module>
     </modules>
 
     <dependencies>
