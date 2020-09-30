@@ -5,3 +5,5 @@ create table blog (
     create_time datetime not null comment '创建时间',
     views int(30) not null comment '浏览量'
 )engine=innodb default charset=utf8;
+
+alter table blog add primary key (id);

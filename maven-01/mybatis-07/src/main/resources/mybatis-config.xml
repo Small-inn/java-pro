@@ -13,7 +13,13 @@
     <settings>
         <!--   标准日志工场     -->
         <setting name="logImpl" value="STDOUT_LOGGING" />
+        <!--   是否开启驼峰命名自动映射，即从经典数据库列名 A_COLUMN 映射到经典 Java 属性名 aColumn。    -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
     </settings>
+
+    <typeAliases>
+        <typeAlias type="com.lx.pojo.Blog" alias="Blog"></typeAlias>
+    </typeAliases>
 
     <!--  environments  -->
     <environments default="development">

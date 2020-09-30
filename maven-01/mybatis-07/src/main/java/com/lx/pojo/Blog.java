@@ -6,9 +6,9 @@ import java.util.Date;
 
 @Data
 public class Blog {
-    private int id;
+    private String id;
     private String title;
     private String author;
-    private Date create_time;
+    private Date createTime;
     private int views;
 }
